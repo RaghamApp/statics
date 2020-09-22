@@ -1,4 +1,10 @@
+@font-face {
+  font-family: dana;
+  src: url('../fonts/dana-fanum-regular.woff2');
+}
+
 .success-page {
+  font-family: dana;
   max-width: 300px;
   display: block;
   margin: 0 auto;
@@ -28,6 +34,7 @@
 }
 
 h2.success {
+  font-family: dana;
   color: #47c7c5;
   margin-top: 25px;
 }
@@ -47,5 +54,16 @@ h5 {
 }
 
 a {
+  font-family: dana;
   text-decoration: none;
+}
+
+.btn {
+  font-size: 19px;
+  border: 0;
+  font-family: dana;
+  background-color: #1abc9c;
+  color: #FFF;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
