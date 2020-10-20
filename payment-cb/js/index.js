@@ -1,7 +1,8 @@
 "use strict";
 var urlParams = new URLSearchParams(window.location.search);
-var transactionID = document.getElementById("transactionID");
-transactionID.innerHTML = transactionID.innerHTML.replace("{{transactionID}}", urlParams.get("transactionID") || "");
+vat transactionID = urlParams.get("transactionID")
+var transactionIdEl = document.getElementById("transactionID");
+transactionIdEl.innerHTML = transactionIdEl.innerHTML.replace("{{transactionID}}", transactionID || "");
 
 window.dataLayer = window.dataLayer || [];
 function gtag() {
@@ -9,8 +10,8 @@ function gtag() {
 }
 gtag("js", new Date());
 
-const userID = urlParams.get("userID");
-const amount = Number(urlParams.get("amount"));
+vat userID = urlParams.get("userID");
+var amount = Number(urlParams.get("amount"));
 
 if (userID && amount) {
   console.log("Tracking purchase", userID, transactionID, amount);
