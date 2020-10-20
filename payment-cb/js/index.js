@@ -15,7 +15,7 @@ var amount = Number(urlParams.get("amount"));
 
 if (userID && amount) {
   console.log("Tracking purchase", userID, transactionID, amount);
-  gtag("config", "G-HYBHD7T8SH", { user_id: userID });
+  gtag("config", "G-HYBHD7T8SH", { user_id: userIDو debug_mode: true });
   gtag("event", "purchase", {
     currency: "USD",
     transaction_id: transactionID,
