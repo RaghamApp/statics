@@ -1,6 +1,6 @@
 "use strict";
 var urlParams = new URLSearchParams(window.location.search);
-vat transactionID = urlParams.get("transactionID")
+var transactionID = urlParams.get("transactionID")
 var transactionIdEl = document.getElementById("transactionID");
 transactionIdEl.innerHTML = transactionIdEl.innerHTML.replace("{{transactionID}}", transactionID || "");
 
