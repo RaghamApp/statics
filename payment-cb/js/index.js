@@ -10,7 +10,7 @@ function gtag() {
 }
 gtag("js", new Date());
 
-vat userID = urlParams.get("userID");
+var userID = urlParams.get("userID");
 var amount = Number(urlParams.get("amount"));
 
 if (userID && amount) {
