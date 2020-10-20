@@ -20,5 +20,6 @@ if (userID && amount) {
     currency: "USD",
     transaction_id: transactionID,
     value: amount,
+    revenue: amount
   });
 }
